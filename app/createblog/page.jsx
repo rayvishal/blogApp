@@ -7,6 +7,11 @@ import axios from "axios";
 const Blog = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  async function dummy() {
+    const data = await axios.get("/api/hello");
+    console.log(data.data);
+  }
+  dummy();
   console.log(title, content);
   async function handleSubmit(e) {
     e.preventDefault();
