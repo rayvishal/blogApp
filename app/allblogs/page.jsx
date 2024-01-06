@@ -33,7 +33,7 @@ const Page = () => {
   };
   async function getData() {
     try {
-      const getAllData = await axios.get("http://localhost:3000/api/blog");
+      const getAllData = await axios.get("/api/blog");
       setData(getAllData.data);
     } catch (error) {
       console.log(error);
