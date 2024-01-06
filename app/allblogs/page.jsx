@@ -51,7 +51,7 @@ const Page = () => {
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4">
           {data.length
             ? data.map((e) => (
-                <div className="card" style={{ width: "18rem" }}>
+                <div key={e.id} className="card" style={{ width: "18rem" }}>
                   <div className="card-body">
                     <h5 className="card-title">{e.title}</h5>
                     <p className="card-text">
