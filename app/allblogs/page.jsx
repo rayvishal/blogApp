@@ -20,7 +20,7 @@ import axios from "axios";
   </div>
 </div>; */
 }
-const page = () => {
+const Page = () => {
   const [data, setData] = useState([]);
   let str =
     "The apple mango is a friendship and a banana is a monster because it is banana and apple is the king which i like the mosnt indeed";
@@ -74,4 +74,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
