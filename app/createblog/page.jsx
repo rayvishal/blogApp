@@ -11,7 +11,7 @@ const Blog = () => {
   async function handleSubmit(e) {
     e.preventDefault();
     try {
-      const sendData = await axios.post("http://localhost:3000/api/blog", {
+      const sendData = await axios.post("/api/blog", {
         title: title,
         content: content,
       });
